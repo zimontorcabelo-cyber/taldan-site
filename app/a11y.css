@@ -1,0 +1,16 @@
+/* Readability pass: text on cream surfaces needs 4.5:1. The palette greys and
+   the light bronze fail that, so small text and filled buttons get darker
+   values here. Dashboard (dark) selectors are deliberately left alone. */
+.gridref,.eyebrow,.hero-lead,.dim-label,.head-sub,.sector-desc,
+.pgrid-filter,.pstack-cta,.pmodal-desc,.ilmap-label-meta{ color:#5A5246; }
+
+.scalebar-note,.heroplate-cap,.dim-val.pending,.empty,.ilmap-label-hint,
+.cfield-label,.cdirect-k{ color:#645C4F; }
+.cform input::placeholder,.cform textarea::placeholder{ color:#6B6356; opacity:1; }
+
+.sector-ref,.pstack-badge,.pstack-meta,.pstack-card:hover .pstack-cta{ color:#855A32; }
+
+.btn,.cform-submit{ background:linear-gradient(180deg,#8A5B30,#6B4526); }
+.pgrid-filter.on{ background:#8A5B30; border-color:#8A5B30; }
+.dbtn,.dash-tab.on{ background:#8A5B30; border-color:#8A5B30; }
+.dbtn:hover{ background:#7D5530; border-color:#7D5530; }

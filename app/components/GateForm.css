@@ -1,0 +1,24 @@
+/* ---- access gate: shown in place of the homepage while pre-launch ---- */
+.gate-wrap{
+  min-height:100vh; display:flex; align-items:center; justify-content:center;
+  background:var(--dark); padding:24px;
+}
+.gate-card{
+  max-width:360px; width:100%; text-align:center; color:var(--cream);
+  border:1px solid var(--line-strong); border-radius:18px; background:var(--dark-2);
+  padding:40px 32px; display:flex; flex-direction:column; align-items:center; gap:18px;
+}
+.gate-td{
+  font-family:'Playfair Display', serif; font-weight:700;
+  display:flex; align-items:baseline; line-height:1; color:var(--cream);
+}
+.gate-note{ color:var(--cream-dim); font-size:14.5px; }
+.gate-card form{ width:100%; display:flex; flex-direction:column; gap:14px; }
+.gate-input{
+  width:100%; border:1px solid var(--line-strong); background:var(--dark);
+  color:var(--cream); font-family:'IBM Plex Mono',monospace; font-size:15px;
+  padding:12px 14px; border-radius:8px; text-align:center; letter-spacing:.08em;
+}
+.gate-input:focus{ outline:none; border-color:var(--bronze); }
+.gate-btn{ margin-top:0; align-self:stretch; justify-content:center; }
+.gate-err{ color:var(--bronze-bright); font-size:13.5px; }

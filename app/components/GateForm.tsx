@@ -51,7 +51,7 @@ export default function GateForm() {
             autoFocus
           />
           <button className="btn gate-btn" type="submit" disabled={status === 'checking'}>
-            <span>{status === 'checking' ? 'בודק…' : 'כניסה'}</span>
+            {status === 'checking' ? 'בודק…' : 'כניסה'}
           </button>
         </form>
         {status === 'error' && <p className="gate-err">הקוד שגוי. אפשר לנסות שוב.</p>}

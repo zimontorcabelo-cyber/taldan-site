@@ -1,4 +1,5 @@
 'use client';
+import '../dashboard.css';
 
 import { useEffect, useMemo, useState } from 'react';
 
@@ -124,7 +125,7 @@ export default function Dashboard() {
     return (
       <div className="dlogin">
         <h1>ניהול תוכן</h1>
-        <p className="dnote">האתר של טלדן — עריכת טקסטים, תמונות ופרויקטים.</p>
+        <p className="dnote">האתר של טלדן: עריכת טקסטים, תמונות ופרויקטים.</p>
         <form onSubmit={login}>
           <div className="drow" style={{ gridTemplateColumns: '1fr' }}>
             <input
@@ -144,7 +145,7 @@ export default function Dashboard() {
   return (
     <div className="dash">
       <div className="dash-h">
-        <h1>ניהול תוכן — טלדן</h1>
+        <h1>ניהול תוכן, טלדן</h1>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
           {msg && <span className={msg.startsWith('שגיאה') ? 'derr' : 'dsaved'}>{msg}</span>}
           <a className="dbtn ghost" href="/" target="_blank" rel="noopener">צפייה באתר</a>
@@ -329,7 +330,7 @@ function SiteCopyTab({ siteCopy, onSave }: { siteCopy: Row[]; onSave: (updates: 
   return (
     <div>
       <p className="dnote">
-        כל טקסט קבוע שמופיע באתר — כותרות, תת-כותרות, כפתורים, טופס יצירת הקשר והפוטר.
+        כל טקסט קבוע שמופיע באתר: כותרות, תת-כותרות, כפתורים, טופס יצירת הקשר והפוטר.
         השינויים כאן חלים על כל הטקסט בבת אחת, לא רק על פסקאות ספציפיות. שדה שנשאר ריק חוזר לברירת המחדל.
       </p>
       {Object.entries(groups).map(([group, rows]) => (
